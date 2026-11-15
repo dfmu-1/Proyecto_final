@@ -5,10 +5,12 @@ project(StockManager VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Widgets Sql)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Sql)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Sql)
 
-qt_add_executable(StockManager
+add_executable(StockManager
     main.cpp
 
     models/Producto.cpp
@@ -26,6 +28,6 @@ qt_add_executable(StockManager
 )
 
 target_link_libraries(StockManager PRIVATE
-    Qt6::Widgets
-    Qt6::Sql
+    Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::Sql
 )
