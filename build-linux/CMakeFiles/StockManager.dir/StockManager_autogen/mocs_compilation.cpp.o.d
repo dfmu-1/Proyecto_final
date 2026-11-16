@@ -1,7 +1,7 @@
 CMakeFiles/StockManager.dir/StockManager_autogen/mocs_compilation.cpp.o: \
  /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/StockManager_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/StockManager_autogen/DWW7M6GQBY/moc_ProductoView.cpp \
+ /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/StockManager_autogen/DWW7M6GQBY/moc_CategoriaView.cpp \
  /usr/include/c++/13/memory /usr/include/c++/13/bits/memoryfwd.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -116,7 +116,7 @@ CMakeFiles/StockManager.dir/StockManager_autogen/mocs_compilation.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/StockManager_autogen/DWW7M6GQBY/../../../views/ProductoView.h \
+ /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/StockManager_autogen/DWW7M6GQBY/../../../views/CategoriaView.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -339,4 +339,6 @@ CMakeFiles/StockManager.dir/StockManager_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
+ /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/StockManager_autogen/DWW7M6GQBY/moc_ProductoView.cpp \
+ /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/StockManager_autogen/DWW7M6GQBY/../../../views/ProductoView.h

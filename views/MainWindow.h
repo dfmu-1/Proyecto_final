@@ -5,12 +5,16 @@
 #include <QMainWindow>
 
 class InventarioController;
+class CategoriaController;
 
 class MainWindow : public QMainWindow
 {
 public:
-    explicit MainWindow(InventarioController *controller,
-                        QWidget *parent = nullptr);
+    MainWindow(
+        InventarioController *inventarioController,
+        CategoriaController *categoriaController,
+        QWidget *parent = nullptr
+    );
 };
 
 #endif

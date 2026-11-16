@@ -1,6 +1,7 @@
 
 #include "MainWindow.h"
 #include "ProductoView.h"
+#include "CategoriaView.h"
 
 #include <QLabel>
 #include <QPushButton>
@@ -9,7 +10,11 @@
 #include <QVBoxLayout>
 #include <QWidget>
 
-MainWindow::MainWindow(InventarioController *controller, QWidget *parent)
+MainWindow::MainWindow(
+    InventarioController *inventarioController,
+    CategoriaController *categoriaController,
+    QWidget *parent
+)
     : QMainWindow(parent)
 {
     setWindowTitle("StockManager - Gestor de Inventario");
@@ -75,7 +80,13 @@ MainWindow::MainWindow(InventarioController *controller, QWidget *parent)
         QVBoxLayout *pageLayout = new QVBoxLayout(page);
 
         if (i == 1) {
-            pageLayout->addWidget(new ProductoView(controller, page));
+            pageLayout->addWidget(
+                new ProductoView(inventarioController, page)
+            );
+        } else if (i == 2) {
+            pageLayout->addWidget(
+                new CategoriaView(categoriaController, page)
+            );
         } else {
             QLabel *pageTitle = new QLabel(sections[i]);
             pageTitle->setStyleSheet(

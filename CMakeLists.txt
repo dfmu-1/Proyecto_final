@@ -21,8 +21,11 @@ add_executable(StockManager
     database/Database.cpp
 
     controllers/InventarioController.cpp
+    controllers/CategoriaController.cpp
 
     views/MainWindow.cpp
+    views/CategoriaView.h
+    views/CategoriaView.cpp
     views/ProductoView.h
     views/ProductoView.cpp
 

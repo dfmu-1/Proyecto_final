@@ -179,6 +179,30 @@ StockManager_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/StockManager_autogen/mocs_compilation.cpp.s
 .PHONY : StockManager_autogen/mocs_compilation.cpp.s
 
+controllers/CategoriaController.o: controllers/CategoriaController.cpp.o
+.PHONY : controllers/CategoriaController.o
+
+# target to build an object file
+controllers/CategoriaController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/controllers/CategoriaController.cpp.o
+.PHONY : controllers/CategoriaController.cpp.o
+
+controllers/CategoriaController.i: controllers/CategoriaController.cpp.i
+.PHONY : controllers/CategoriaController.i
+
+# target to preprocess a source file
+controllers/CategoriaController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/controllers/CategoriaController.cpp.i
+.PHONY : controllers/CategoriaController.cpp.i
+
+controllers/CategoriaController.s: controllers/CategoriaController.cpp.s
+.PHONY : controllers/CategoriaController.s
+
+# target to generate assembly for a file
+controllers/CategoriaController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/controllers/CategoriaController.cpp.s
+.PHONY : controllers/CategoriaController.cpp.s
+
 controllers/InventarioController.o: controllers/InventarioController.cpp.o
 .PHONY : controllers/InventarioController.o
 
@@ -347,6 +371,30 @@ reports/Reporte.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/reports/Reporte.cpp.s
 .PHONY : reports/Reporte.cpp.s
 
+views/CategoriaView.o: views/CategoriaView.cpp.o
+.PHONY : views/CategoriaView.o
+
+# target to build an object file
+views/CategoriaView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/views/CategoriaView.cpp.o
+.PHONY : views/CategoriaView.cpp.o
+
+views/CategoriaView.i: views/CategoriaView.cpp.i
+.PHONY : views/CategoriaView.i
+
+# target to preprocess a source file
+views/CategoriaView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/views/CategoriaView.cpp.i
+.PHONY : views/CategoriaView.cpp.i
+
+views/CategoriaView.s: views/CategoriaView.cpp.s
+.PHONY : views/CategoriaView.s
+
+# target to generate assembly for a file
+views/CategoriaView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/views/CategoriaView.cpp.s
+.PHONY : views/CategoriaView.cpp.s
+
 views/MainWindow.o: views/MainWindow.cpp.o
 .PHONY : views/MainWindow.o
 
@@ -409,6 +457,9 @@ help:
 	@echo "... StockManager_autogen/mocs_compilation.o"
 	@echo "... StockManager_autogen/mocs_compilation.i"
 	@echo "... StockManager_autogen/mocs_compilation.s"
+	@echo "... controllers/CategoriaController.o"
+	@echo "... controllers/CategoriaController.i"
+	@echo "... controllers/CategoriaController.s"
 	@echo "... controllers/InventarioController.o"
 	@echo "... controllers/InventarioController.i"
 	@echo "... controllers/InventarioController.s"
@@ -430,6 +481,9 @@ help:
 	@echo "... reports/Reporte.o"
 	@echo "... reports/Reporte.i"
 	@echo "... reports/Reporte.s"
+	@echo "... views/CategoriaView.o"
+	@echo "... views/CategoriaView.i"
+	@echo "... views/CategoriaView.s"
 	@echo "... views/MainWindow.o"
 	@echo "... views/MainWindow.i"
 	@echo "... views/MainWindow.s"

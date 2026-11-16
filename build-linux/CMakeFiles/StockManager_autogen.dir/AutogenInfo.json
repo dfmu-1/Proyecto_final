@@ -213,6 +213,12 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/CategoriaController.h",
+			"Mu",
+			"7CL2LH2DRO/moc_CategoriaController.cpp",
+			null
+		],
+		[
 			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/InventarioController.h",
 			"Mu",
 			"7CL2LH2DRO/moc_InventarioController.cpp",
@@ -246,6 +252,12 @@
 			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/reports/Reporte.h",
 			"Mu",
 			"ZQP45CBB2O/moc_Reporte.cpp",
+			null
+		],
+		[
+			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/CategoriaView.h",
+			"Mu",
+			"DWW7M6GQBY/moc_CategoriaView.cpp",
 			null
 		],
 		[
@@ -328,6 +340,11 @@
 	"SOURCES" : 
 	[
 		[
+			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/CategoriaController.cpp",
+			"Mu",
+			null
+		],
+		[
 			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/InventarioController.cpp",
 			"Mu",
 			null
@@ -359,6 +376,11 @@
 		],
 		[
 			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/reports/Reporte.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/CategoriaView.cpp",
 			"Mu",
 			null
 		],

@@ -43,9 +43,21 @@
 },
 {
   "directory": "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/StockManager_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++17 -fPIC -o CMakeFiles/StockManager.dir/controllers/CategoriaController.cpp.o -c /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/CategoriaController.cpp",
+  "file": "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/CategoriaController.cpp",
+  "output": "CMakeFiles/StockManager.dir/controllers/CategoriaController.cpp.o"
+},
+{
+  "directory": "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux",
   "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/StockManager_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++17 -fPIC -o CMakeFiles/StockManager.dir/views/MainWindow.cpp.o -c /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MainWindow.cpp",
   "file": "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MainWindow.cpp",
   "output": "CMakeFiles/StockManager.dir/views/MainWindow.cpp.o"
+},
+{
+  "directory": "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/StockManager_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++17 -fPIC -o CMakeFiles/StockManager.dir/views/CategoriaView.cpp.o -c /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/CategoriaView.cpp",
+  "file": "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/CategoriaView.cpp",
+  "output": "CMakeFiles/StockManager.dir/views/CategoriaView.cpp.o"
 },
 {
   "directory": "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux",

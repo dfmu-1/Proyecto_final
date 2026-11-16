@@ -5,12 +5,13 @@
 #include "views/MainWindow.h"
 #include "database/Database.h"
 #include "controllers/InventarioController.h"
+#include "controllers/CategoriaController.h"
 
 int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    // 1. Crear y abrir la base de datos
+    // Inicializar base de datos
     Database database;
 
     if (!database.open() || !database.initialize()) {
@@ -23,13 +24,17 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    // 2. Crear el controlador del inventario
-    InventarioController controller(database.connection());
+    // Crear controladores
+    InventarioController inventarioController(database.connection());
 
-    // 3. Crear la ventana principal y pasarle el controlador
-    MainWindow ventana(&controller);
+    CategoriaController categoriaController(database.connection());
 
-    // 4. Mostrar la aplicación
+    // Crear ventana principal
+    MainWindow ventana(
+        &inventarioController,
+        &categoriaController
+    );
+
     ventana.show();
 
     return app.exec();
