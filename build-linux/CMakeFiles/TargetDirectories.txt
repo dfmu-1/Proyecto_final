@@ -1,0 +1,5 @@
+/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles/StockManager.dir
+/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles/edit_cache.dir
+/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles/rebuild_cache.dir
+/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles/StockManager_autogen_timestamp_deps.dir
+/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles/StockManager_autogen.dir

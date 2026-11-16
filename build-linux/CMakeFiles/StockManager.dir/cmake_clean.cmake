@@ -1,0 +1,34 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/StockManager_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/StockManager_autogen.dir/ParseCache.txt"
+  "StockManager_autogen"
+  "CMakeFiles/StockManager.dir/StockManager_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/StockManager.dir/StockManager_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/StockManager.dir/controllers/InventarioController.cpp.o"
+  "CMakeFiles/StockManager.dir/controllers/InventarioController.cpp.o.d"
+  "CMakeFiles/StockManager.dir/database/Database.cpp.o"
+  "CMakeFiles/StockManager.dir/database/Database.cpp.o.d"
+  "CMakeFiles/StockManager.dir/main.cpp.o"
+  "CMakeFiles/StockManager.dir/main.cpp.o.d"
+  "CMakeFiles/StockManager.dir/models/Categoria.cpp.o"
+  "CMakeFiles/StockManager.dir/models/Categoria.cpp.o.d"
+  "CMakeFiles/StockManager.dir/models/Movimiento.cpp.o"
+  "CMakeFiles/StockManager.dir/models/Movimiento.cpp.o.d"
+  "CMakeFiles/StockManager.dir/models/Producto.cpp.o"
+  "CMakeFiles/StockManager.dir/models/Producto.cpp.o.d"
+  "CMakeFiles/StockManager.dir/reports/Reporte.cpp.o"
+  "CMakeFiles/StockManager.dir/reports/Reporte.cpp.o.d"
+  "CMakeFiles/StockManager.dir/views/MainWindow.cpp.o"
+  "CMakeFiles/StockManager.dir/views/MainWindow.cpp.o.d"
+  "CMakeFiles/StockManager.dir/views/ProductoView.cpp.o"
+  "CMakeFiles/StockManager.dir/views/ProductoView.cpp.o.d"
+  "StockManager"
+  "StockManager.pdb"
+  "StockManager_autogen/mocs_compilation.cpp"
+  "StockManager_autogen/timestamp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/StockManager.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

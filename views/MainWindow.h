@@ -4,10 +4,13 @@
 
 #include <QMainWindow>
 
+class InventarioController;
+
 class MainWindow : public QMainWindow
 {
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(InventarioController *controller,
+                        QWidget *parent = nullptr);
 };
 
 #endif

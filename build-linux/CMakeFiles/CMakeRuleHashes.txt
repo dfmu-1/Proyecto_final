@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+d000bd54d442d74df7f864c7a3c280c4 CMakeFiles/StockManager_autogen
+d000bd54d442d74df7f864c7a3c280c4 CMakeFiles/StockManager_autogen_timestamp_deps
+ce558b4abaf88654a5a4670d6b9a7ec1 StockManager_autogen/timestamp

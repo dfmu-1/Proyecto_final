@@ -6,6 +6,7 @@ project(StockManager VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_AUTOMOC ON)
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Sql)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Sql)
@@ -22,6 +23,7 @@ add_executable(StockManager
     controllers/InventarioController.cpp
 
     views/MainWindow.cpp
+    views/ProductoView.h
     views/ProductoView.cpp
 
     reports/Reporte.cpp
