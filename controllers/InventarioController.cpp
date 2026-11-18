@@ -76,13 +76,31 @@ QList<Producto> InventarioController::obtenerProductos()
 
     QSqlQuery query(db);
 
-    if (!query.exec("SELECT * FROM PRODUCTOS")) {
-        qDebug() << query.lastError().text();
+    QString consulta = R"(
+        SELECT
+            P.id_producto,
+            P.codigo,
+            P.nombre,
+            P.cantidad,
+            P.precio,
+            P.ubicacion,
+            P.fecha_adquisicion,
+            P.stock_minimo,
+            P.id_categoria,
+            C.nombre AS nombre_categoria
+        FROM PRODUCTOS P
+        LEFT JOIN CATEGORIAS C
+            ON P.id_categoria = C.id_categoria
+        ORDER BY P.id_producto
+    )";
+
+    if (!query.exec(consulta)) {
+        qDebug() << "Error consultando productos:"
+                 << query.lastError().text();
         return productos;
     }
 
     while (query.next()) {
-
         Producto producto;
 
         producto.id = query.value("id_producto").toInt();
@@ -98,9 +116,14 @@ QList<Producto> InventarioController::obtenerProductos()
         );
 
         producto.stockMinimo = query.value("stock_minimo").toInt();
+        producto.idCategoria = query.value("id_categoria").toInt();
 
-        producto.idCategoria =
-            query.value("id_categoria").toInt();
+        producto.nombreCategoria =
+            query.value("nombre_categoria").toString();
+
+        if (producto.nombreCategoria.isEmpty()) {
+            producto.nombreCategoria = "Sin categoría";
+        }
 
         productos.append(producto);
     }

@@ -10,17 +10,25 @@ class QPushButton;
 class QTableWidget;
 
 class InventarioController;
+class CategoriaController;
+class QComboBox;
 
 class ProductoView : public QWidget
+
 {
     Q_OBJECT
 
 public:
-    explicit ProductoView(InventarioController *controller,
-                          QWidget *parent = nullptr);
+    explicit ProductoView(
+    InventarioController *controller,
+    CategoriaController *categoriaController,
+    QWidget *parent = nullptr
+);
 
 private:
     InventarioController *controller;
+    CategoriaController *categoriaController;
+    QComboBox *categoriaInput;
 
     QLineEdit *codigoInput;
     QLineEdit *nombreInput;
@@ -34,6 +42,7 @@ private:
     QTableWidget *tablaProductos;
 
     void configurarInterfaz();
+    void cargarCategorias();
     void registrarProducto();
     void cargarProductos();
 };

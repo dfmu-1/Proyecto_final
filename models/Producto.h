@@ -19,6 +19,7 @@ public:
     QDate fechaAdquisicion;
     int stockMinimo;
     int idCategoria;
+    QString nombreCategoria;
 };
 
 #endif

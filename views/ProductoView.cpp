@@ -1,12 +1,15 @@
 
 #include "ProductoView.h"
 #include "../models/Producto.h"
+#include "../models/Categoria.h"
 #include "../controllers/InventarioController.h"
+#include "../controllers/CategoriaController.h"
 
 #include <QLineEdit>
 #include <QSpinBox>
 #include <QDoubleSpinBox>
 #include <QPushButton>
+#include <QComboBox>
 #include <QTableWidget>
 #include <QTableWidgetItem>
 #include <QVBoxLayout>
@@ -15,11 +18,32 @@
 #include <QMessageBox>
 #include <QDate>
 
-ProductoView::ProductoView(InventarioController *controller, QWidget *parent)
-    : QWidget(parent), controller(controller)
+ProductoView::ProductoView(
+    InventarioController *controller,
+    CategoriaController *categoriaController,
+    QWidget *parent
+)
+    : QWidget(parent),
+      controller(controller),
+      categoriaController(categoriaController)
 {
     configurarInterfaz();
+    cargarCategorias();
     cargarProductos();
+}
+
+void ProductoView::cargarCategorias()
+{
+    categoriaInput->clear();
+    categoriaInput->addItem("Sin categoría", 0);
+
+    if (!categoriaController) {
+        return;
+    }
+
+    for (const Categoria &categoria : categoriaController->obtenerCategorias()) {
+        categoriaInput->addItem(categoria.nombre, categoria.id);
+    }
 }
 
 void ProductoView::configurarInterfaz()
@@ -32,6 +56,7 @@ void ProductoView::configurarInterfaz()
     codigoInput = new QLineEdit();
     nombreInput = new QLineEdit();
     ubicacionInput = new QLineEdit();
+    categoriaInput = new QComboBox();
 
     cantidadInput = new QSpinBox();
     cantidadInput->setRange(0, 1000000);
@@ -46,6 +71,7 @@ void ProductoView::configurarInterfaz()
     formulario->addRow("Código:", codigoInput);
     formulario->addRow("Nombre:", nombreInput);
     formulario->addRow("Ubicación:", ubicacionInput);
+    formulario->addRow("Categoría:", categoriaInput);
     formulario->addRow("Cantidad:", cantidadInput);
     formulario->addRow("Precio:", precioInput);
     formulario->addRow("Stock mínimo:", stockMinimoInput);
@@ -55,10 +81,10 @@ void ProductoView::configurarInterfaz()
     // Tabla de productos
     tablaProductos = new QTableWidget();
 
-    tablaProductos->setColumnCount(6);
+    tablaProductos->setColumnCount(7);
     tablaProductos->setHorizontalHeaderLabels({
-        "Código", "Nombre", "Cantidad",
-        "Precio", "Ubicación", "Stock mínimo"
+    "Código", "Nombre", "Cantidad",
+    "Precio", "Ubicación", "Stock mínimo", "Categoría"
     });
 
     tablaProductos->horizontalHeader()->setSectionResizeMode(
@@ -100,6 +126,7 @@ void ProductoView::registrarProducto()
     producto.precio = precioInput->value();
     producto.stockMinimo = stockMinimoInput->value();
     producto.fechaAdquisicion = QDate::currentDate();
+    producto.idCategoria = categoriaInput->currentData().toInt();
 
     // Guardar en la base de datos
     if (controller->registrarProducto(producto)) {
@@ -169,6 +196,10 @@ void ProductoView::cargarProductos()
             fila, 5, new QTableWidgetItem(
                 QString::number(producto.stockMinimo)
             )
+        );
+        tablaProductos->setItem(
+        fila, 6,
+        new QTableWidgetItem(producto.nombreCategoria)
         );
     }
 }

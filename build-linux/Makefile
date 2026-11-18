@@ -227,6 +227,30 @@ controllers/InventarioController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/controllers/InventarioController.cpp.s
 .PHONY : controllers/InventarioController.cpp.s
 
+controllers/MovimientoController.o: controllers/MovimientoController.cpp.o
+.PHONY : controllers/MovimientoController.o
+
+# target to build an object file
+controllers/MovimientoController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/controllers/MovimientoController.cpp.o
+.PHONY : controllers/MovimientoController.cpp.o
+
+controllers/MovimientoController.i: controllers/MovimientoController.cpp.i
+.PHONY : controllers/MovimientoController.i
+
+# target to preprocess a source file
+controllers/MovimientoController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/controllers/MovimientoController.cpp.i
+.PHONY : controllers/MovimientoController.cpp.i
+
+controllers/MovimientoController.s: controllers/MovimientoController.cpp.s
+.PHONY : controllers/MovimientoController.s
+
+# target to generate assembly for a file
+controllers/MovimientoController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/controllers/MovimientoController.cpp.s
+.PHONY : controllers/MovimientoController.cpp.s
+
 database/Database.o: database/Database.cpp.o
 .PHONY : database/Database.o
 
@@ -419,6 +443,30 @@ views/MainWindow.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/views/MainWindow.cpp.s
 .PHONY : views/MainWindow.cpp.s
 
+views/MovimientoView.o: views/MovimientoView.cpp.o
+.PHONY : views/MovimientoView.o
+
+# target to build an object file
+views/MovimientoView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/views/MovimientoView.cpp.o
+.PHONY : views/MovimientoView.cpp.o
+
+views/MovimientoView.i: views/MovimientoView.cpp.i
+.PHONY : views/MovimientoView.i
+
+# target to preprocess a source file
+views/MovimientoView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/views/MovimientoView.cpp.i
+.PHONY : views/MovimientoView.cpp.i
+
+views/MovimientoView.s: views/MovimientoView.cpp.s
+.PHONY : views/MovimientoView.s
+
+# target to generate assembly for a file
+views/MovimientoView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/views/MovimientoView.cpp.s
+.PHONY : views/MovimientoView.cpp.s
+
 views/ProductoView.o: views/ProductoView.cpp.o
 .PHONY : views/ProductoView.o
 
@@ -463,6 +511,9 @@ help:
 	@echo "... controllers/InventarioController.o"
 	@echo "... controllers/InventarioController.i"
 	@echo "... controllers/InventarioController.s"
+	@echo "... controllers/MovimientoController.o"
+	@echo "... controllers/MovimientoController.i"
+	@echo "... controllers/MovimientoController.s"
 	@echo "... database/Database.o"
 	@echo "... database/Database.i"
 	@echo "... database/Database.s"
@@ -487,6 +538,9 @@ help:
 	@echo "... views/MainWindow.o"
 	@echo "... views/MainWindow.i"
 	@echo "... views/MainWindow.s"
+	@echo "... views/MovimientoView.o"
+	@echo "... views/MovimientoView.i"
+	@echo "... views/MovimientoView.s"
 	@echo "... views/ProductoView.o"
 	@echo "... views/ProductoView.i"
 	@echo "... views/ProductoView.s"

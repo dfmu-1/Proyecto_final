@@ -49,6 +49,12 @@
 },
 {
   "directory": "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/StockManager_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++17 -fPIC -o CMakeFiles/StockManager.dir/controllers/MovimientoController.cpp.o -c /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/MovimientoController.cpp",
+  "file": "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/MovimientoController.cpp",
+  "output": "CMakeFiles/StockManager.dir/controllers/MovimientoController.cpp.o"
+},
+{
+  "directory": "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux",
   "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/StockManager_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++17 -fPIC -o CMakeFiles/StockManager.dir/views/MainWindow.cpp.o -c /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MainWindow.cpp",
   "file": "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MainWindow.cpp",
   "output": "CMakeFiles/StockManager.dir/views/MainWindow.cpp.o"
@@ -64,6 +70,12 @@
   "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/StockManager_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++17 -fPIC -o CMakeFiles/StockManager.dir/views/ProductoView.cpp.o -c /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ProductoView.cpp",
   "file": "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ProductoView.cpp",
   "output": "CMakeFiles/StockManager.dir/views/ProductoView.cpp.o"
+},
+{
+  "directory": "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/StockManager_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -std=gnu++17 -fPIC -o CMakeFiles/StockManager.dir/views/MovimientoView.cpp.o -c /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MovimientoView.cpp",
+  "file": "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MovimientoView.cpp",
+  "output": "CMakeFiles/StockManager.dir/views/MovimientoView.cpp.o"
 },
 {
   "directory": "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux",

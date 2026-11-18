@@ -225,6 +225,12 @@
 			null
 		],
 		[
+			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/MovimientoController.h",
+			"Mu",
+			"7CL2LH2DRO/moc_MovimientoController.cpp",
+			null
+		],
+		[
 			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/database/Database.h",
 			"Mu",
 			"BL3K65LMA5/moc_Database.cpp",
@@ -264,6 +270,12 @@
 			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MainWindow.h",
 			"Mu",
 			"DWW7M6GQBY/moc_MainWindow.cpp",
+			null
+		],
+		[
+			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MovimientoView.h",
+			"Mu",
+			"DWW7M6GQBY/moc_MovimientoView.cpp",
 			null
 		],
 		[
@@ -350,6 +362,11 @@
 			null
 		],
 		[
+			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/MovimientoController.cpp",
+			"Mu",
+			null
+		],
+		[
 			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/database/Database.cpp",
 			"Mu",
 			null
@@ -386,6 +403,11 @@
 		],
 		[
 			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MainWindow.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MovimientoView.cpp",
 			"Mu",
 			null
 		],

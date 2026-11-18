@@ -22,12 +22,16 @@ add_executable(StockManager
 
     controllers/InventarioController.cpp
     controllers/CategoriaController.cpp
+    controllers/MovimientoController.h
+    controllers/MovimientoController.cpp
 
     views/MainWindow.cpp
     views/CategoriaView.h
     views/CategoriaView.cpp
     views/ProductoView.h
     views/ProductoView.cpp
+    views/MovimientoView.h
+    views/MovimientoView.cpp
 
     reports/Reporte.cpp
 )

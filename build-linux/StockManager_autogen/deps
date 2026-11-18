@@ -7,6 +7,8 @@ StockManager_autogen/timestamp: \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/CategoriaController.h \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/InventarioController.cpp \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/InventarioController.h \
+	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/MovimientoController.cpp \
+	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/MovimientoController.h \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/database/Database.cpp \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/database/Database.h \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/main.cpp \
@@ -22,6 +24,8 @@ StockManager_autogen/timestamp: \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/CategoriaView.h \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MainWindow.cpp \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MainWindow.h \
+	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MovimientoView.cpp \
+	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MovimientoView.h \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ProductoView.cpp \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ProductoView.h \
 	/usr/include/alloca.h \

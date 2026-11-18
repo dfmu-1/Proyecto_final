@@ -1,9 +1,11 @@
 
 #include <QApplication>
 #include <QMessageBox>
+#include "controllers/MovimientoController.h"
 
 #include "views/MainWindow.h"
 #include "database/Database.h"
+
 #include "controllers/InventarioController.h"
 #include "controllers/CategoriaController.h"
 
@@ -11,7 +13,7 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    // Inicializar base de datos
+    // Inicializar la base de datos
     Database database;
 
     if (!database.open() || !database.initialize()) {
@@ -23,18 +25,27 @@ int main(int argc, char *argv[])
 
         return -1;
     }
-
-    // Crear controladores
-    InventarioController inventarioController(database.connection());
-
-    CategoriaController categoriaController(database.connection());
-
-    // Crear ventana principal
-    MainWindow ventana(
-        &inventarioController,
-        &categoriaController
+    MovimientoController movimientoController(
+        database.connection()
     );
 
+    // Crear los controladores
+    InventarioController inventarioController(
+        database.connection()
+    );
+
+    CategoriaController categoriaController(
+        database.connection()
+    );
+
+    // Crear la ventana principal
+    MainWindow ventana(
+        &inventarioController,
+        &categoriaController,
+        &movimientoController
+    );
+
+    // Mostrar ventana
     ventana.show();
 
     return app.exec();

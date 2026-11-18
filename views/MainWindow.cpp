@@ -2,6 +2,7 @@
 #include "MainWindow.h"
 #include "ProductoView.h"
 #include "CategoriaView.h"
+#include "MovimientoView.h"
 
 #include <QLabel>
 #include <QPushButton>
@@ -13,6 +14,7 @@
 MainWindow::MainWindow(
     InventarioController *inventarioController,
     CategoriaController *categoriaController,
+    MovimientoController *movimientoController,
     QWidget *parent
 )
     : QMainWindow(parent)
@@ -80,19 +82,26 @@ MainWindow::MainWindow(
         QVBoxLayout *pageLayout = new QVBoxLayout(page);
 
         if (i == 1) {
-            pageLayout->addWidget(
-                new ProductoView(inventarioController, page)
-            );
+
+    pageLayout->addWidget(
+        new ProductoView(inventarioController, categoriaController, page)
+    );
+
         } else if (i == 2) {
-            pageLayout->addWidget(
-                new CategoriaView(categoriaController, page)
-            );
-        } else {
-            QLabel *pageTitle = new QLabel(sections[i]);
-            pageTitle->setStyleSheet(
-                "font-size: 26px; font-weight: bold;"
+
+        pageLayout->addWidget(
+            new CategoriaView(categoriaController, page)
             );
 
+        } else if (i == 3) {
+
+        pageLayout->addWidget(
+        new MovimientoView(movimientoController, inventarioController, page)
+        );
+
+        } else {
+
+        QLabel *pageTitle = new QLabel(sections[i]);
             pageLayout->addWidget(pageTitle);
             pageLayout->addStretch();
         }
