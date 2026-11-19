@@ -1,3 +1,4 @@
+
 #ifndef PRODUCTOVIEW_H
 #define PRODUCTOVIEW_H
 
@@ -8,26 +9,26 @@ class QSpinBox;
 class QDoubleSpinBox;
 class QPushButton;
 class QTableWidget;
+class QComboBox;
 
 class InventarioController;
 class CategoriaController;
-class QComboBox;
 
 class ProductoView : public QWidget
-
 {
     Q_OBJECT
 
 public:
     explicit ProductoView(
-    InventarioController *controller,
-    CategoriaController *categoriaController,
-    QWidget *parent = nullptr
-);
+        InventarioController *controller,
+        CategoriaController *categoriaController,
+        QWidget *parent = nullptr
+    );
 
 private:
     InventarioController *controller;
     CategoriaController *categoriaController;
+
     QComboBox *categoriaInput;
 
     QLineEdit *codigoInput;
@@ -39,12 +40,22 @@ private:
     QSpinBox *stockMinimoInput;
 
     QPushButton *registrarButton;
+    QPushButton *actualizarButton;
+    QPushButton *eliminarButton;
+
     QTableWidget *tablaProductos;
+
+    int productoSeleccionadoId = -1;
 
     void configurarInterfaz();
     void cargarCategorias();
     void registrarProducto();
     void cargarProductos();
+
+    void seleccionarProducto(int fila, int columna);
+    void actualizarProducto();
+    void eliminarProducto();
+    void limpiarFormulario();
 };
 
 #endif
