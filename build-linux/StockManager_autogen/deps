@@ -3,12 +3,16 @@ StockManager_autogen/timestamp: \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles/3.28.3/CMakeSystem.cmake \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/StockManager_autogen/moc_predefs.h \
+	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/AlertaController.cpp \
+	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/AlertaController.h \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/CategoriaController.cpp \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/CategoriaController.h \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/InventarioController.cpp \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/InventarioController.h \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/MovimientoController.cpp \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/MovimientoController.h \
+	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/ReporteController.cpp \
+	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/ReporteController.h \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/database/Database.cpp \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/database/Database.h \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/main.cpp \
@@ -20,6 +24,8 @@ StockManager_autogen/timestamp: \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/models/Producto.h \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/reports/Reporte.cpp \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/reports/Reporte.h \
+	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/AlertaView.cpp \
+	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/AlertaView.h \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/CategoriaView.cpp \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/CategoriaView.h \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MainWindow.cpp \
@@ -28,6 +34,8 @@ StockManager_autogen/timestamp: \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MovimientoView.h \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ProductoView.cpp \
 	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ProductoView.h \
+	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ReporteView.cpp \
+	/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ReporteView.h \
 	/usr/include/alloca.h \
 	/usr/include/asm-generic/errno-base.h \
 	/usr/include/asm-generic/errno.h \
@@ -506,6 +514,14 @@ StockManager_autogen/timestamp: \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsTargets-none.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportAdditionalTargetInfo.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportConfig.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportConfigVersion.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportConfigVersionImpl.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportDependencies.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportTargets-none.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportTargets.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportVersionlessTargets.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfig.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlConfigVersion.cmake \

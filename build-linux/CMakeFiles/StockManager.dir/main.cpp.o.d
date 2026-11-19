@@ -361,12 +361,15 @@ CMakeFiles/StockManager.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtSql/qtsqlexports.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
+ /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/AlertaController.h \
+ /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/../models/Producto.h \
+ /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/ReporteController.h \
+ /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/../reports/Reporte.h \
  /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MainWindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
  /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/database/Database.h \
  /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/InventarioController.h \
- /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/../models/Producto.h \
  /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/CategoriaController.h \
  /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/../models/Categoria.h

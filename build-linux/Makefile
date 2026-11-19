@@ -179,6 +179,30 @@ StockManager_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/StockManager_autogen/mocs_compilation.cpp.s
 .PHONY : StockManager_autogen/mocs_compilation.cpp.s
 
+controllers/AlertaController.o: controllers/AlertaController.cpp.o
+.PHONY : controllers/AlertaController.o
+
+# target to build an object file
+controllers/AlertaController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.o
+.PHONY : controllers/AlertaController.cpp.o
+
+controllers/AlertaController.i: controllers/AlertaController.cpp.i
+.PHONY : controllers/AlertaController.i
+
+# target to preprocess a source file
+controllers/AlertaController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.i
+.PHONY : controllers/AlertaController.cpp.i
+
+controllers/AlertaController.s: controllers/AlertaController.cpp.s
+.PHONY : controllers/AlertaController.s
+
+# target to generate assembly for a file
+controllers/AlertaController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.s
+.PHONY : controllers/AlertaController.cpp.s
+
 controllers/CategoriaController.o: controllers/CategoriaController.cpp.o
 .PHONY : controllers/CategoriaController.o
 
@@ -250,6 +274,30 @@ controllers/MovimientoController.s: controllers/MovimientoController.cpp.s
 controllers/MovimientoController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/controllers/MovimientoController.cpp.s
 .PHONY : controllers/MovimientoController.cpp.s
+
+controllers/ReporteController.o: controllers/ReporteController.cpp.o
+.PHONY : controllers/ReporteController.o
+
+# target to build an object file
+controllers/ReporteController.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.o
+.PHONY : controllers/ReporteController.cpp.o
+
+controllers/ReporteController.i: controllers/ReporteController.cpp.i
+.PHONY : controllers/ReporteController.i
+
+# target to preprocess a source file
+controllers/ReporteController.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.i
+.PHONY : controllers/ReporteController.cpp.i
+
+controllers/ReporteController.s: controllers/ReporteController.cpp.s
+.PHONY : controllers/ReporteController.s
+
+# target to generate assembly for a file
+controllers/ReporteController.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.s
+.PHONY : controllers/ReporteController.cpp.s
 
 database/Database.o: database/Database.cpp.o
 .PHONY : database/Database.o
@@ -395,6 +443,30 @@ reports/Reporte.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/reports/Reporte.cpp.s
 .PHONY : reports/Reporte.cpp.s
 
+views/AlertaView.o: views/AlertaView.cpp.o
+.PHONY : views/AlertaView.o
+
+# target to build an object file
+views/AlertaView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/views/AlertaView.cpp.o
+.PHONY : views/AlertaView.cpp.o
+
+views/AlertaView.i: views/AlertaView.cpp.i
+.PHONY : views/AlertaView.i
+
+# target to preprocess a source file
+views/AlertaView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/views/AlertaView.cpp.i
+.PHONY : views/AlertaView.cpp.i
+
+views/AlertaView.s: views/AlertaView.cpp.s
+.PHONY : views/AlertaView.s
+
+# target to generate assembly for a file
+views/AlertaView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/views/AlertaView.cpp.s
+.PHONY : views/AlertaView.cpp.s
+
 views/CategoriaView.o: views/CategoriaView.cpp.o
 .PHONY : views/CategoriaView.o
 
@@ -491,6 +563,30 @@ views/ProductoView.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/views/ProductoView.cpp.s
 .PHONY : views/ProductoView.cpp.s
 
+views/ReporteView.o: views/ReporteView.cpp.o
+.PHONY : views/ReporteView.o
+
+# target to build an object file
+views/ReporteView.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/views/ReporteView.cpp.o
+.PHONY : views/ReporteView.cpp.o
+
+views/ReporteView.i: views/ReporteView.cpp.i
+.PHONY : views/ReporteView.i
+
+# target to preprocess a source file
+views/ReporteView.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/views/ReporteView.cpp.i
+.PHONY : views/ReporteView.cpp.i
+
+views/ReporteView.s: views/ReporteView.cpp.s
+.PHONY : views/ReporteView.s
+
+# target to generate assembly for a file
+views/ReporteView.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StockManager.dir/build.make CMakeFiles/StockManager.dir/views/ReporteView.cpp.s
+.PHONY : views/ReporteView.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -505,6 +601,9 @@ help:
 	@echo "... StockManager_autogen/mocs_compilation.o"
 	@echo "... StockManager_autogen/mocs_compilation.i"
 	@echo "... StockManager_autogen/mocs_compilation.s"
+	@echo "... controllers/AlertaController.o"
+	@echo "... controllers/AlertaController.i"
+	@echo "... controllers/AlertaController.s"
 	@echo "... controllers/CategoriaController.o"
 	@echo "... controllers/CategoriaController.i"
 	@echo "... controllers/CategoriaController.s"
@@ -514,6 +613,9 @@ help:
 	@echo "... controllers/MovimientoController.o"
 	@echo "... controllers/MovimientoController.i"
 	@echo "... controllers/MovimientoController.s"
+	@echo "... controllers/ReporteController.o"
+	@echo "... controllers/ReporteController.i"
+	@echo "... controllers/ReporteController.s"
 	@echo "... database/Database.o"
 	@echo "... database/Database.i"
 	@echo "... database/Database.s"
@@ -532,6 +634,9 @@ help:
 	@echo "... reports/Reporte.o"
 	@echo "... reports/Reporte.i"
 	@echo "... reports/Reporte.s"
+	@echo "... views/AlertaView.o"
+	@echo "... views/AlertaView.i"
+	@echo "... views/AlertaView.s"
 	@echo "... views/CategoriaView.o"
 	@echo "... views/CategoriaView.i"
 	@echo "... views/CategoriaView.s"
@@ -544,6 +649,9 @@ help:
 	@echo "... views/ProductoView.o"
 	@echo "... views/ProductoView.i"
 	@echo "... views/ProductoView.s"
+	@echo "... views/ReporteView.o"
+	@echo "... views/ReporteView.i"
+	@echo "... views/ReporteView.s"
 .PHONY : help
 
 

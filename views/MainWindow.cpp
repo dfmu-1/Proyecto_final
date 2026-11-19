@@ -3,6 +3,8 @@
 #include "ProductoView.h"
 #include "CategoriaView.h"
 #include "MovimientoView.h"
+#include "AlertaView.h"
+#include "ReporteView.h"
 
 #include <QLabel>
 #include <QPushButton>
@@ -11,12 +13,13 @@
 #include <QVBoxLayout>
 #include <QWidget>
 
-MainWindow::MainWindow(
-    InventarioController *inventarioController,
-    CategoriaController *categoriaController,
-    MovimientoController *movimientoController,
-    QWidget *parent
-)
+MainWindow::MainWindow(InventarioController *inventarioController,
+                       CategoriaController *categoriaController,
+                       MovimientoController *movimientoController,
+                       AlertaController *alertaController,
+                       ReporteController *reporteController,
+                       QWidget *parent)
+
     : QMainWindow(parent)
 {
     setWindowTitle("StockManager - Gestor de Inventario");
@@ -99,13 +102,15 @@ MainWindow::MainWindow(
         new MovimientoView(movimientoController, inventarioController, page)
         );
 
-        } else {
+        } else if (i == 4) {
 
-        QLabel *pageTitle = new QLabel(sections[i]);
-            pageLayout->addWidget(pageTitle);
-            pageLayout->addStretch();
+        pageLayout->addWidget(
+        new AlertaView(alertaController, page)
+        );
+
+        } else if (i == 5) {
+        page = new ReporteView(reporteController, page);
         }
-
         pages->addWidget(page);
 
         // Navegacion entre paginas

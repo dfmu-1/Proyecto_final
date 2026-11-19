@@ -2,6 +2,8 @@
 #include <QApplication>
 #include <QMessageBox>
 #include "controllers/MovimientoController.h"
+#include "controllers/AlertaController.h"
+#include "controllers/ReporteController.h"
 
 #include "views/MainWindow.h"
 #include "database/Database.h"
@@ -37,16 +39,24 @@ int main(int argc, char *argv[])
     CategoriaController categoriaController(
         database.connection()
     );
-
-    // Crear la ventana principal
-    MainWindow ventana(
-        &inventarioController,
-        &categoriaController,
-        &movimientoController
+    AlertaController alertaController(
+        database.connection()
+    );
+    ReporteController reporteController(
+        database.connection()
     );
 
+    // Crear la ventana principal
+    MainWindow window(
+    &inventarioController,
+    &categoriaController,
+    &movimientoController,
+    &alertaController,
+    &reporteController
+);
+
     // Mostrar ventana
-    ventana.show();
+    window.show();
 
     return app.exec();
 }

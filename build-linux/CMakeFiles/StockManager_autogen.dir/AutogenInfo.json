@@ -205,13 +205,28 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlTargets.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlTargets-none.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake",
-		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlVersionlessTargets.cmake"
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlVersionlessTargets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportConfigVersionImpl.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportConfig.cmake",
+		"/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportDependencies.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportTargets.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportTargets-none.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportAdditionalTargetInfo.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt6PrintSupport/Qt6PrintSupportVersionlessTargets.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final",
 	"DEP_FILE" : "/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/StockManager_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "StockManager_autogen/timestamp",
 	"HEADERS" : 
 	[
+		[
+			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/AlertaController.h",
+			"Mu",
+			"7CL2LH2DRO/moc_AlertaController.cpp",
+			null
+		],
 		[
 			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/CategoriaController.h",
 			"Mu",
@@ -228,6 +243,12 @@
 			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/MovimientoController.h",
 			"Mu",
 			"7CL2LH2DRO/moc_MovimientoController.cpp",
+			null
+		],
+		[
+			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/ReporteController.h",
+			"Mu",
+			"7CL2LH2DRO/moc_ReporteController.cpp",
 			null
 		],
 		[
@@ -261,6 +282,12 @@
 			null
 		],
 		[
+			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/AlertaView.h",
+			"Mu",
+			"DWW7M6GQBY/moc_AlertaView.cpp",
+			null
+		],
+		[
 			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/CategoriaView.h",
 			"Mu",
 			"DWW7M6GQBY/moc_CategoriaView.cpp",
@@ -283,6 +310,12 @@
 			"Mu",
 			"DWW7M6GQBY/moc_ProductoView.cpp",
 			null
+		],
+		[
+			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ReporteView.h",
+			"Mu",
+			"DWW7M6GQBY/moc_ReporteView.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -293,6 +326,7 @@
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
 		"QT_NO_DEBUG",
+		"QT_PRINTSUPPORT_LIB",
 		"QT_SQL_LIB",
 		"QT_WIDGETS_LIB"
 	],
@@ -311,6 +345,7 @@
 		"/usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++",
 		"/usr/include/x86_64-linux-gnu/qt6/QtGui",
 		"/usr/include/x86_64-linux-gnu/qt6/QtSql",
+		"/usr/include/x86_64-linux-gnu/qt6/QtPrintSupport",
 		"/usr/include",
 		"/usr/include/c++/13",
 		"/usr/include/x86_64-linux-gnu/c++/13",
@@ -352,6 +387,11 @@
 	"SOURCES" : 
 	[
 		[
+			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/AlertaController.cpp",
+			"Mu",
+			null
+		],
+		[
 			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/CategoriaController.cpp",
 			"Mu",
 			null
@@ -363,6 +403,11 @@
 		],
 		[
 			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/MovimientoController.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/ReporteController.cpp",
 			"Mu",
 			null
 		],
@@ -397,6 +442,11 @@
 			null
 		],
 		[
+			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/AlertaView.cpp",
+			"Mu",
+			null
+		],
+		[
 			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/CategoriaView.cpp",
 			"Mu",
 			null
@@ -413,6 +463,11 @@
 		],
 		[
 			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ProductoView.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ReporteView.cpp",
 			"Mu",
 			null
 		]

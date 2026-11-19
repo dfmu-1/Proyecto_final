@@ -342,6 +342,8 @@ CMakeFiles/StockManager.dir/views/MainWindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/CategoriaView.h \
  /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MovimientoView.h \
+ /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/AlertaView.h \
+ /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ReporteView.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \

@@ -201,10 +201,38 @@ CMakeFiles/StockManager.dir/controllers/MovimientoController.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/StockManager.dir/controllers/MovimientoController.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/MovimientoController.cpp -o CMakeFiles/StockManager.dir/controllers/MovimientoController.cpp.s
 
+CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.o: CMakeFiles/StockManager.dir/flags.make
+CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.o: /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/AlertaController.cpp
+CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.o: CMakeFiles/StockManager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.o -MF CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.o.d -o CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.o -c /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/AlertaController.cpp
+
+CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/AlertaController.cpp > CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.i
+
+CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/AlertaController.cpp -o CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.s
+
+CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.o: CMakeFiles/StockManager.dir/flags.make
+CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.o: /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/ReporteController.cpp
+CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.o: CMakeFiles/StockManager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.o -MF CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.o.d -o CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.o -c /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/ReporteController.cpp
+
+CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/ReporteController.cpp > CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.i
+
+CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/controllers/ReporteController.cpp -o CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.s
+
 CMakeFiles/StockManager.dir/views/MainWindow.cpp.o: CMakeFiles/StockManager.dir/flags.make
 CMakeFiles/StockManager.dir/views/MainWindow.cpp.o: /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MainWindow.cpp
 CMakeFiles/StockManager.dir/views/MainWindow.cpp.o: CMakeFiles/StockManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/StockManager.dir/views/MainWindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/StockManager.dir/views/MainWindow.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StockManager.dir/views/MainWindow.cpp.o -MF CMakeFiles/StockManager.dir/views/MainWindow.cpp.o.d -o CMakeFiles/StockManager.dir/views/MainWindow.cpp.o -c /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MainWindow.cpp
 
 CMakeFiles/StockManager.dir/views/MainWindow.cpp.i: cmake_force
@@ -218,7 +246,7 @@ CMakeFiles/StockManager.dir/views/MainWindow.cpp.s: cmake_force
 CMakeFiles/StockManager.dir/views/CategoriaView.cpp.o: CMakeFiles/StockManager.dir/flags.make
 CMakeFiles/StockManager.dir/views/CategoriaView.cpp.o: /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/CategoriaView.cpp
 CMakeFiles/StockManager.dir/views/CategoriaView.cpp.o: CMakeFiles/StockManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/StockManager.dir/views/CategoriaView.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/StockManager.dir/views/CategoriaView.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StockManager.dir/views/CategoriaView.cpp.o -MF CMakeFiles/StockManager.dir/views/CategoriaView.cpp.o.d -o CMakeFiles/StockManager.dir/views/CategoriaView.cpp.o -c /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/CategoriaView.cpp
 
 CMakeFiles/StockManager.dir/views/CategoriaView.cpp.i: cmake_force
@@ -232,7 +260,7 @@ CMakeFiles/StockManager.dir/views/CategoriaView.cpp.s: cmake_force
 CMakeFiles/StockManager.dir/views/ProductoView.cpp.o: CMakeFiles/StockManager.dir/flags.make
 CMakeFiles/StockManager.dir/views/ProductoView.cpp.o: /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ProductoView.cpp
 CMakeFiles/StockManager.dir/views/ProductoView.cpp.o: CMakeFiles/StockManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/StockManager.dir/views/ProductoView.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/StockManager.dir/views/ProductoView.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StockManager.dir/views/ProductoView.cpp.o -MF CMakeFiles/StockManager.dir/views/ProductoView.cpp.o.d -o CMakeFiles/StockManager.dir/views/ProductoView.cpp.o -c /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ProductoView.cpp
 
 CMakeFiles/StockManager.dir/views/ProductoView.cpp.i: cmake_force
@@ -246,7 +274,7 @@ CMakeFiles/StockManager.dir/views/ProductoView.cpp.s: cmake_force
 CMakeFiles/StockManager.dir/views/MovimientoView.cpp.o: CMakeFiles/StockManager.dir/flags.make
 CMakeFiles/StockManager.dir/views/MovimientoView.cpp.o: /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MovimientoView.cpp
 CMakeFiles/StockManager.dir/views/MovimientoView.cpp.o: CMakeFiles/StockManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/StockManager.dir/views/MovimientoView.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/StockManager.dir/views/MovimientoView.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StockManager.dir/views/MovimientoView.cpp.o -MF CMakeFiles/StockManager.dir/views/MovimientoView.cpp.o.d -o CMakeFiles/StockManager.dir/views/MovimientoView.cpp.o -c /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MovimientoView.cpp
 
 CMakeFiles/StockManager.dir/views/MovimientoView.cpp.i: cmake_force
@@ -257,10 +285,38 @@ CMakeFiles/StockManager.dir/views/MovimientoView.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/StockManager.dir/views/MovimientoView.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/MovimientoView.cpp -o CMakeFiles/StockManager.dir/views/MovimientoView.cpp.s
 
+CMakeFiles/StockManager.dir/views/AlertaView.cpp.o: CMakeFiles/StockManager.dir/flags.make
+CMakeFiles/StockManager.dir/views/AlertaView.cpp.o: /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/AlertaView.cpp
+CMakeFiles/StockManager.dir/views/AlertaView.cpp.o: CMakeFiles/StockManager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/StockManager.dir/views/AlertaView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StockManager.dir/views/AlertaView.cpp.o -MF CMakeFiles/StockManager.dir/views/AlertaView.cpp.o.d -o CMakeFiles/StockManager.dir/views/AlertaView.cpp.o -c /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/AlertaView.cpp
+
+CMakeFiles/StockManager.dir/views/AlertaView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/StockManager.dir/views/AlertaView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/AlertaView.cpp > CMakeFiles/StockManager.dir/views/AlertaView.cpp.i
+
+CMakeFiles/StockManager.dir/views/AlertaView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/StockManager.dir/views/AlertaView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/AlertaView.cpp -o CMakeFiles/StockManager.dir/views/AlertaView.cpp.s
+
+CMakeFiles/StockManager.dir/views/ReporteView.cpp.o: CMakeFiles/StockManager.dir/flags.make
+CMakeFiles/StockManager.dir/views/ReporteView.cpp.o: /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ReporteView.cpp
+CMakeFiles/StockManager.dir/views/ReporteView.cpp.o: CMakeFiles/StockManager.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/StockManager.dir/views/ReporteView.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StockManager.dir/views/ReporteView.cpp.o -MF CMakeFiles/StockManager.dir/views/ReporteView.cpp.o.d -o CMakeFiles/StockManager.dir/views/ReporteView.cpp.o -c /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ReporteView.cpp
+
+CMakeFiles/StockManager.dir/views/ReporteView.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/StockManager.dir/views/ReporteView.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ReporteView.cpp > CMakeFiles/StockManager.dir/views/ReporteView.cpp.i
+
+CMakeFiles/StockManager.dir/views/ReporteView.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/StockManager.dir/views/ReporteView.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/views/ReporteView.cpp -o CMakeFiles/StockManager.dir/views/ReporteView.cpp.s
+
 CMakeFiles/StockManager.dir/reports/Reporte.cpp.o: CMakeFiles/StockManager.dir/flags.make
 CMakeFiles/StockManager.dir/reports/Reporte.cpp.o: /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/reports/Reporte.cpp
 CMakeFiles/StockManager.dir/reports/Reporte.cpp.o: CMakeFiles/StockManager.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/StockManager.dir/reports/Reporte.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/StockManager.dir/reports/Reporte.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/StockManager.dir/reports/Reporte.cpp.o -MF CMakeFiles/StockManager.dir/reports/Reporte.cpp.o.d -o CMakeFiles/StockManager.dir/reports/Reporte.cpp.o -c /home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/reports/Reporte.cpp
 
 CMakeFiles/StockManager.dir/reports/Reporte.cpp.i: cmake_force
@@ -282,10 +338,14 @@ StockManager_OBJECTS = \
 "CMakeFiles/StockManager.dir/controllers/InventarioController.cpp.o" \
 "CMakeFiles/StockManager.dir/controllers/CategoriaController.cpp.o" \
 "CMakeFiles/StockManager.dir/controllers/MovimientoController.cpp.o" \
+"CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.o" \
+"CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.o" \
 "CMakeFiles/StockManager.dir/views/MainWindow.cpp.o" \
 "CMakeFiles/StockManager.dir/views/CategoriaView.cpp.o" \
 "CMakeFiles/StockManager.dir/views/ProductoView.cpp.o" \
 "CMakeFiles/StockManager.dir/views/MovimientoView.cpp.o" \
+"CMakeFiles/StockManager.dir/views/AlertaView.cpp.o" \
+"CMakeFiles/StockManager.dir/views/ReporteView.cpp.o" \
 "CMakeFiles/StockManager.dir/reports/Reporte.cpp.o"
 
 # External object files for target StockManager
@@ -300,20 +360,25 @@ StockManager: CMakeFiles/StockManager.dir/database/Database.cpp.o
 StockManager: CMakeFiles/StockManager.dir/controllers/InventarioController.cpp.o
 StockManager: CMakeFiles/StockManager.dir/controllers/CategoriaController.cpp.o
 StockManager: CMakeFiles/StockManager.dir/controllers/MovimientoController.cpp.o
+StockManager: CMakeFiles/StockManager.dir/controllers/AlertaController.cpp.o
+StockManager: CMakeFiles/StockManager.dir/controllers/ReporteController.cpp.o
 StockManager: CMakeFiles/StockManager.dir/views/MainWindow.cpp.o
 StockManager: CMakeFiles/StockManager.dir/views/CategoriaView.cpp.o
 StockManager: CMakeFiles/StockManager.dir/views/ProductoView.cpp.o
 StockManager: CMakeFiles/StockManager.dir/views/MovimientoView.cpp.o
+StockManager: CMakeFiles/StockManager.dir/views/AlertaView.cpp.o
+StockManager: CMakeFiles/StockManager.dir/views/ReporteView.cpp.o
 StockManager: CMakeFiles/StockManager.dir/reports/Reporte.cpp.o
 StockManager: CMakeFiles/StockManager.dir/build.make
-StockManager: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 StockManager: /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
+StockManager: /usr/lib/x86_64-linux-gnu/libQt6PrintSupport.so.6.4.2
+StockManager: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
 StockManager: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
+StockManager: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 StockManager: /usr/lib/x86_64-linux-gnu/libGLX.so
 StockManager: /usr/lib/x86_64-linux-gnu/libOpenGL.so
-StockManager: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 StockManager: CMakeFiles/StockManager.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable StockManager"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/juanp/ALSEPAL/githubcontrol/proyecto_semestre/Proyecto_final/build-linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable StockManager"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/StockManager.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
