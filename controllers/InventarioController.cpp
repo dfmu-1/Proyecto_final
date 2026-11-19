@@ -132,6 +132,80 @@ QList<Producto> InventarioController::obtenerProductos()
     return productos;
 }
 
+
+QList<Producto> InventarioController::buscarProductos(const QString &texto)
+{
+    QList<Producto> productos;
+
+    if (!db.isOpen()) {
+        return productos;
+    }
+
+    QSqlQuery query(db);
+
+    query.prepare(R"(
+        SELECT
+            P.id_producto,
+            P.codigo,
+            P.nombre,
+            P.cantidad,
+            P.precio,
+            P.ubicacion,
+            P.fecha_adquisicion,
+            P.stock_minimo,
+            P.id_categoria,
+            C.nombre AS nombre_categoria
+        FROM PRODUCTOS P
+        LEFT JOIN CATEGORIAS C
+            ON P.id_categoria = C.id_categoria
+        WHERE P.codigo LIKE ?
+           OR P.nombre LIKE ?
+        ORDER BY P.id_producto
+    )");
+
+    QString busqueda = "%" + texto.trimmed() + "%";
+
+    query.addBindValue(busqueda);
+    query.addBindValue(busqueda);
+
+    if (!query.exec()) {
+        qWarning() << "Error buscando productos:"
+                   << query.lastError().text();
+        return productos;
+    }
+
+    while (query.next()) {
+        Producto producto;
+
+        producto.id = query.value("id_producto").toInt();
+        producto.codigo = query.value("codigo").toString();
+        producto.nombre = query.value("nombre").toString();
+        producto.cantidad = query.value("cantidad").toInt();
+        producto.precio = query.value("precio").toDouble();
+        producto.ubicacion = query.value("ubicacion").toString();
+
+        producto.fechaAdquisicion = QDate::fromString(
+            query.value("fecha_adquisicion").toString(),
+            "yyyy-MM-dd"
+        );
+
+        producto.stockMinimo = query.value("stock_minimo").toInt();
+        producto.idCategoria = query.value("id_categoria").toInt();
+
+        producto.nombreCategoria =
+            query.value("nombre_categoria").toString();
+
+        if (producto.nombreCategoria.isEmpty()) {
+            producto.nombreCategoria = "Sin categoría";
+        }
+
+        productos.append(producto);
+    }
+
+    return productos;
+}
+
+
 bool InventarioController::actualizarProducto(const Producto &producto)
 {
     if (!db.isOpen()) {

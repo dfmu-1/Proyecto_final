@@ -84,6 +84,7 @@ void ProductoView::configurarInterfaz()
     registrarButton = new QPushButton("Registrar producto");
     actualizarButton = new QPushButton("Actualizar producto");
     eliminarButton = new QPushButton("Eliminar producto");
+    busquedaInput = new QLineEdit();
 
     actualizarButton->setEnabled(false);
     eliminarButton->setEnabled(false);
@@ -108,10 +109,12 @@ void ProductoView::configurarInterfaz()
 
     // Agregar elementos al diseño
     layoutPrincipal->addLayout(formulario);
+    layoutPrincipal->addWidget(busquedaInput);
     layoutPrincipal->addWidget(registrarButton);
     layoutPrincipal->addWidget(actualizarButton);
     layoutPrincipal->addWidget(eliminarButton);
     layoutPrincipal->addWidget(tablaProductos);
+    
 
     // Conectar botones y selección de filas
     connect(registrarButton, &QPushButton::clicked,
@@ -125,6 +128,11 @@ void ProductoView::configurarInterfaz()
 
     connect(tablaProductos, &QTableWidget::cellClicked,
             this, &ProductoView::seleccionarProducto);
+    connect(busquedaInput, &QLineEdit::textChanged,
+            this, &ProductoView::buscarProductos);
+    busquedaInput->setPlaceholderText(
+        "Buscar por código o nombre del producto..."
+    );
 }
 
 // Registrar un producto
@@ -389,3 +397,62 @@ void ProductoView::limpiarFormulario()
 
     tablaProductos->clearSelection();
 }
+
+void ProductoView::buscarProductos()
+{
+    QString texto = busquedaInput->text().trimmed();
+
+    QList<Producto> productos;
+
+    if (texto.isEmpty()) {
+        productos = controller->obtenerProductos();
+    } else {
+        productos = controller->buscarProductos(texto);
+    }
+
+    tablaProductos->setRowCount(0);
+
+    for (const Producto &producto : productos) {
+
+        int fila = tablaProductos->rowCount();
+        tablaProductos->insertRow(fila);
+
+        QTableWidgetItem *codigoItem =
+            new QTableWidgetItem(producto.codigo);
+
+        codigoItem->setData(Qt::UserRole, producto.id);
+
+        tablaProductos->setItem(fila, 0, codigoItem);
+
+        tablaProductos->setItem(
+            fila, 1, new QTableWidgetItem(producto.nombre)
+        );
+
+        tablaProductos->setItem(
+            fila, 2,
+            new QTableWidgetItem(QString::number(producto.cantidad))
+        );
+
+        tablaProductos->setItem(
+            fila, 3,
+            new QTableWidgetItem(
+                QString::number(producto.precio, 'f', 2)
+            )
+        );
+
+        tablaProductos->setItem(
+            fila, 4, new QTableWidgetItem(producto.ubicacion)
+        );
+
+        tablaProductos->setItem(
+            fila, 5,
+            new QTableWidgetItem(QString::number(producto.stockMinimo))
+        );
+
+        tablaProductos->setItem(
+            fila, 6,
+            new QTableWidgetItem(producto.nombreCategoria)
+        );
+    }
+}
+

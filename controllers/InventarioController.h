@@ -19,6 +19,7 @@ public:
     int estadoStock
     );
     QList<Producto> obtenerProductos();
+    QList<Producto> buscarProductos(const QString &texto);
     bool actualizarProducto(const Producto &producto);
     bool eliminarProducto(int idProducto);
 
