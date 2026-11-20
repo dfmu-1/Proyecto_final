@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,104,84,129"/>
+<area shape="rect" id="Node000001" href="$classAlertaView.html" title=" " alt="" coords="151,5,245,31"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="66,92,95,65,131,40,154,28,157,33,133,44,98,69,69,96"/>
+<area shape="rect" id="Node000002" href="$classCategoriaView.html" title=" " alt="" coords="139,55,257,80"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="96,97,157,78,158,83,98,102"/>
+<area shape="rect" id="Node000003" href="$classMovimientoView.html" title=" " alt="" coords="132,104,264,129"/>
+<area shape="poly" id="edge4_Node000000_Node000003" title=" " alt="" coords="97,114,132,114,132,119,97,119"/>
+<area shape="rect" id="Node000004" href="$classProductoView.html" title=" " alt="" coords="143,153,253,179"/>
+<area shape="poly" id="edge5_Node000000_Node000004" title=" " alt="" coords="98,131,158,151,157,156,96,136"/>
+<area shape="rect" id="Node000005" href="$classReporteView.html" title=" " alt="" coords="145,203,251,228"/>
+<area shape="poly" id="edge6_Node000000_Node000005" title=" " alt="" coords="70,137,99,163,133,188,159,200,157,205,131,192,96,167,66,141"/>
+</map>

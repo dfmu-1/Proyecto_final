@@ -31,8 +31,8 @@ private:
     QComboBox *tipoInput;
     QSpinBox *cantidadInput;
     QLineEdit *observacionInput;
-    QComboBox *filtroCategoria;
-    QComboBox *filtroStock;
+    QComboBox *filtroProducto;
+    QComboBox *filtroTipo;
 
     QPushButton *registrarButton;
     QTableWidget *tablaMovimientos;
@@ -40,7 +40,6 @@ private:
     void configurarInterfaz();
     void cargarProductos();
     void cargarMovimientos();
-    void aplicarFiltros();
 
 private slots:
     void registrarMovimiento();
