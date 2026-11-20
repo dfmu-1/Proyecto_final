@@ -35,6 +35,8 @@ private:
     QLineEdit *nombreInput;
     QLineEdit *ubicacionInput;
     QLineEdit *busquedaInput;
+    QComboBox *filtroCategoria;
+    QComboBox *filtroStock;
 
     QSpinBox *cantidadInput;
     QDoubleSpinBox *precioInput;
@@ -58,6 +60,7 @@ private:
     void eliminarProducto();
     void limpiarFormulario();
     void buscarProductos();
+    void aplicarFiltros();
 };
 
 #endif

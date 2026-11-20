@@ -48,6 +48,16 @@ void ProductoView::cargarCategorias()
     for (const Categoria &categoria : categoriaController->obtenerCategorias()) {
         categoriaInput->addItem(categoria.nombre, categoria.id);
     }
+    filtroCategoria->clear();
+    filtroCategoria->addItem("Todas las categorías", -1);
+
+    if (!categoriaController) {
+        return;}
+
+    for (const Categoria &categoria : categoriaController->obtenerCategorias()) {
+        categoriaInput->addItem(categoria.nombre, categoria.id);
+        filtroCategoria->addItem(categoria.nombre, categoria.id);
+}
 }
 
 // Configurar la interfaz gráfica
@@ -79,12 +89,21 @@ void ProductoView::configurarInterfaz()
     formulario->addRow("Cantidad:", cantidadInput);
     formulario->addRow("Precio:", precioInput);
     formulario->addRow("Stock mínimo:", stockMinimoInput);
+    filtroCategoria = new QComboBox();
+    filtroCategoria->addItem("Todas las categorías", -1);
+
+    filtroStock = new QComboBox();
+    filtroStock->addItem("Todos los productos", 0);
+    filtroStock->addItem("Stock bajo", 1);
+    filtroStock->addItem("Stock suficiente", 2);
+
 
     // Botones
     registrarButton = new QPushButton("Registrar producto");
     actualizarButton = new QPushButton("Actualizar producto");
     eliminarButton = new QPushButton("Eliminar producto");
     busquedaInput = new QLineEdit();
+
 
     actualizarButton->setEnabled(false);
     eliminarButton->setEnabled(false);
@@ -110,6 +129,8 @@ void ProductoView::configurarInterfaz()
     // Agregar elementos al diseño
     layoutPrincipal->addLayout(formulario);
     layoutPrincipal->addWidget(busquedaInput);
+    layoutPrincipal->addWidget(filtroCategoria);
+    layoutPrincipal->addWidget(filtroStock);
     layoutPrincipal->addWidget(registrarButton);
     layoutPrincipal->addWidget(actualizarButton);
     layoutPrincipal->addWidget(eliminarButton);
@@ -133,6 +154,15 @@ void ProductoView::configurarInterfaz()
     busquedaInput->setPlaceholderText(
         "Buscar por código o nombre del producto..."
     );
+    connect(filtroCategoria,
+        &QComboBox::currentIndexChanged,
+        this,
+        &ProductoView::aplicarFiltros);
+
+    connect(filtroStock,
+        &QComboBox::currentIndexChanged,
+        this,
+        &ProductoView::aplicarFiltros);
 }
 
 // Registrar un producto
@@ -185,53 +215,7 @@ void ProductoView::registrarProducto()
 // Cargar los productos en la tabla
 void ProductoView::cargarProductos()
 {
-    QList<Producto> productos = controller->obtenerProductos();
-
-    tablaProductos->setRowCount(0);
-
-    for (const Producto &producto : productos) {
-
-        int fila = tablaProductos->rowCount();
-
-        tablaProductos->insertRow(fila);
-
-        QTableWidgetItem *codigoItem =
-            new QTableWidgetItem(producto.codigo);
-
-        // Guardar el ID real en la primera columna.
-        codigoItem->setData(Qt::UserRole, producto.id);
-
-        tablaProductos->setItem(fila, 0, codigoItem);
-
-        tablaProductos->setItem(
-            fila, 1, new QTableWidgetItem(producto.nombre)
-        );
-
-        tablaProductos->setItem(
-            fila, 2,
-            new QTableWidgetItem(QString::number(producto.cantidad))
-        );
-
-        tablaProductos->setItem(
-            fila, 3,
-            new QTableWidgetItem(
-                QString::number(producto.precio, 'f', 2)
-            )
-        );
-
-        tablaProductos->setItem(
-            fila, 4, new QTableWidgetItem(producto.ubicacion)
-        );
-
-        tablaProductos->setItem(
-            fila, 5,
-            new QTableWidgetItem(QString::number(producto.stockMinimo))
-        );
-
-        tablaProductos->setItem(
-            fila, 6, new QTableWidgetItem(producto.nombreCategoria)
-        );
-    }
+    aplicarFiltros();
 }
 
 // Seleccionar un producto de la tabla
@@ -400,6 +384,11 @@ void ProductoView::limpiarFormulario()
 
 void ProductoView::buscarProductos()
 {
+    aplicarFiltros();
+}
+
+void ProductoView::aplicarFiltros()
+{
     QString texto = busquedaInput->text().trimmed();
 
     QList<Producto> productos;
@@ -410,9 +399,29 @@ void ProductoView::buscarProductos()
         productos = controller->buscarProductos(texto);
     }
 
+    int categoriaSeleccionada = filtroCategoria->currentData().toInt();
+    int tipoStock = filtroStock->currentData().toInt();
+
     tablaProductos->setRowCount(0);
 
     for (const Producto &producto : productos) {
+
+        // Filtrar por categoría
+        if (categoriaSeleccionada != -1 &&
+            producto.idCategoria != categoriaSeleccionada) {
+            continue;
+        }
+
+        // Filtrar por disponibilidad
+        bool stockBajo = producto.cantidad <= producto.stockMinimo;
+
+        if (tipoStock == 1 && !stockBajo) {
+            continue;
+        }
+
+        if (tipoStock == 2 && stockBajo) {
+            continue;
+        }
 
         int fila = tablaProductos->rowCount();
         tablaProductos->insertRow(fila);
@@ -435,9 +444,7 @@ void ProductoView::buscarProductos()
 
         tablaProductos->setItem(
             fila, 3,
-            new QTableWidgetItem(
-                QString::number(producto.precio, 'f', 2)
-            )
+            new QTableWidgetItem(QString::number(producto.precio, 'f', 2))
         );
 
         tablaProductos->setItem(
@@ -450,9 +457,7 @@ void ProductoView::buscarProductos()
         );
 
         tablaProductos->setItem(
-            fila, 6,
-            new QTableWidgetItem(producto.nombreCategoria)
+            fila, 6, new QTableWidgetItem(producto.nombreCategoria)
         );
     }
 }
-
